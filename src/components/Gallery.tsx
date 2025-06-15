@@ -7,44 +7,44 @@ export const Gallery = () => {
     {
       id: 1,
       image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=800&h=600&fit=crop",
-      title: "Contemporary Living Suite",
-      description: "Custom modular seating with Italian leather upholstery and solid walnut frames",
-      category: "Living Room"
+      title: "Conjunto Contemporâneo para Sala",
+      description: "Sofá modular personalizado com estofamento em couro italiano e estruturas em nogueira maciça",
+      category: "Sala de Estar"
     },
     {
       id: 2,
       image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop",
-      title: "Executive Kitchen Design",
-      description: "Handcrafted cabinetry featuring premium oak with integrated smart storage solutions",
-      category: "Kitchen"
+      title: "Cozinha Executiva",
+      description: "Marcenaria artesanal em carvalho premium com soluções inteligentes de armazenamento integrado",
+      category: "Cozinha"
     },
     {
       id: 3,
       image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop",
-      title: "Master Bedroom Collection",
-      description: "Bespoke bedroom suite with custom headboard and matching nightstands in rich mahogany",
-      category: "Bedroom"
+      title: "Coleção Quarto Master",
+      description: "Conjunto personalizado para quarto com cabeceira sob medida e criados-mudo em mogno nobre",
+      category: "Quarto"
     },
     {
       id: 4,
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop",
-      title: "Home Office Sanctuary",
-      description: "Ergonomic workspace featuring built-in shelving and custom desk in sustainable bamboo",
-      category: "Office"
+      title: "Santuário Home Office",
+      description: "Espaço de trabalho ergonômico com estantes integradas e mesa personalizada em bambu sustentável",
+      category: "Escritório"
     },
     {
       id: 5,
       image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&h=600&fit=crop",
-      title: "Dining Room Elegance",
-      description: "Artisan-crafted dining table with live-edge design and matching chairs in reclaimed wood",
-      category: "Dining"
+      title: "Elegância na Sala de Jantar",
+      description: "Mesa artesanal com design de borda viva e cadeiras combinando em madeira de demolição",
+      category: "Jantar"
     },
     {
       id: 6,
       image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=800&h=600&fit=crop",
-      title: "Custom Wardrobe System",
-      description: "Floor-to-ceiling wardrobe with personalized compartments and soft-close mechanisms",
-      category: "Storage"
+      title: "Sistema de Guarda-roupa Personalizado",
+      description: "Guarda-roupa do chão ao teto com compartimentos personalizados e mecanismos de fechamento suave",
+      category: "Armazenamento"
     }
   ];
 
@@ -53,12 +53,12 @@ export const Gallery = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-stone-800 mb-6">
-            Featured Projects
+            Projetos em Destaque
           </h2>
           <div className="w-24 h-1 bg-amber-600 mx-auto mb-8"></div>
           <p className="text-lg text-stone-600 max-w-3xl mx-auto font-light leading-relaxed">
-            Explore our portfolio of custom furniture creations, each piece thoughtfully designed 
-            and meticulously crafted to exceed our clients' expectations.
+            Explore nosso portfólio de criações em móveis personalizados, cada peça cuidadosamente 
+            projetada e meticulosamente confeccionada para superar as expectativas dos nossos clientes.
           </p>
         </div>
         
@@ -89,7 +89,7 @@ export const Gallery = () => {
         
         <div className="text-center">
           <p className="text-lg text-stone-600 mb-6 font-light">
-            Discover more inspiring projects and behind-the-scenes content on our Instagram
+            Descubra mais projetos inspiradores e conteúdo dos bastidores no nosso Instagram
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
@@ -98,13 +98,13 @@ export const Gallery = () => {
               className="border-stone-800 text-stone-800 hover:bg-stone-800 hover:text-white transition-all duration-300 group"
             >
               <Instagram className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Follow @KastellyDesign
+              Siga @KastellyDesign
             </Button>
             <Button 
               size="lg"
               className="bg-amber-600 hover:bg-amber-700 text-white transition-all duration-300 group"
             >
-              View Full Portfolio
+              Ver Portfólio Completo
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

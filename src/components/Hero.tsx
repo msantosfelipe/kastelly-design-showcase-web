@@ -19,13 +19,13 @@ export const Hero = () => {
           </div>
           
           <h2 className="text-2xl md:text-4xl font-light text-stone-700 mb-6 leading-relaxed max-w-4xl mx-auto">
-            Crafting Bespoke Furniture That Reflects<br />
-            <span className="text-amber-700 font-medium">Your Unique Style & Vision</span>
+            Criando Móveis Sob Medida Que Refletem<br />
+            <span className="text-amber-700 font-medium">Seu Estilo & Visão Únicos</span>
           </h2>
           
           <p className="text-lg md:text-xl text-stone-600 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
-            Transform your living spaces with meticulously handcrafted custom furniture.<br />
-            Where premium materials meet exceptional design.
+            Transforme seus espaços com móveis personalizados artesanais.<br />
+            Onde materiais premium encontram design excepcional.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -33,7 +33,7 @@ export const Hero = () => {
               size="lg" 
               className="bg-stone-800 hover:bg-stone-700 text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300 hover:scale-105 group"
             >
-              Start Your Project
+              Iniciar Seu Projeto
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
@@ -41,7 +41,7 @@ export const Hero = () => {
               size="lg" 
               className="border-stone-800 text-stone-800 hover:bg-stone-800 hover:text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300"
             >
-              View Portfolio
+              Ver Portfólio
             </Button>
           </div>
         </div>

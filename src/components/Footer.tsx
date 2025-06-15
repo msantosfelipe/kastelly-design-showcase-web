@@ -11,7 +11,7 @@ export const Footer = () => {
           
           <div className="border-t border-stone-800 pt-8">
             <p className="text-stone-400 font-light">
-              © 2024 Kastelly Design. All rights reserved.
+              © 2024 Kastelly Design. Todos os direitos reservados.
             </p>
           </div>
         </div>
