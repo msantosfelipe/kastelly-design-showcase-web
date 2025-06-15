@@ -9,7 +9,12 @@ export const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in">
-          <div className="mb-8">
+          <div className="mb-8 flex flex-col items-center">
+            <img 
+              src="/lovable-uploads/fcb630cc-8823-45f7-ab9b-537b672eb661.png" 
+              alt="Kastelly Logo" 
+              className="w-24 h-24 md:w-32 md:h-32 mb-6 object-contain"
+            />
             <h1 className="text-6xl md:text-8xl font-bold text-stone-800 mb-4 tracking-tight">
               KASTELLY
             </h1>
