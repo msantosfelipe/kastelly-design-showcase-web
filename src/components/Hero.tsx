@@ -18,22 +18,32 @@ export const Hero = () => {
             </p>
           </div>
           
-          <h2 className="text-2xl md:text-4xl font-light text-stone-700 mb-6 leading-relaxed">
-            Transforming Your Dreams into<br />
-            <span className="text-amber-700 font-medium">Custom-Designed Spaces</span>
+          <h2 className="text-2xl md:text-4xl font-light text-stone-700 mb-6 leading-relaxed max-w-4xl mx-auto">
+            Crafting Bespoke Furniture That Reflects<br />
+            <span className="text-amber-700 font-medium">Your Unique Style & Vision</span>
           </h2>
           
-          <p className="text-lg md:text-xl text-stone-600 mb-8 max-w-2xl mx-auto font-light">
-            Personalized solutions for every room in your home
+          <p className="text-lg md:text-xl text-stone-600 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+            Transform your living spaces with meticulously handcrafted custom furniture.<br />
+            Where premium materials meet exceptional design.
           </p>
           
-          <Button 
-            size="lg" 
-            className="bg-stone-800 hover:bg-stone-700 text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300 hover:scale-105 group"
-          >
-            Contact Us
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              size="lg" 
+              className="bg-stone-800 hover:bg-stone-700 text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300 hover:scale-105 group"
+            >
+              Start Your Project
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button 
+              variant="outline"
+              size="lg" 
+              className="border-stone-800 text-stone-800 hover:bg-stone-800 hover:text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300"
+            >
+              View Portfolio
+            </Button>
+          </div>
         </div>
       </div>
     </section>
