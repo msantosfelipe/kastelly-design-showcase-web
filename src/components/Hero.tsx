@@ -47,11 +47,11 @@ export const Hero = () => {
         <div id="section-hero" className="animate-fade-in">
           {/* Enhanced Logo */}
           <div className="mb-8 md:mb-12 flex flex-col items-center">
-            <div className="backdrop-blur-sm rounded-1xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-amber-300/30 hover:bg-neutral-950 overflow-hidden">
+            <div className="backdrop-blur-sm rounded-1xl shadow-2xl transform transition-all duration-500 hover:scale-105 overflow-hidden">
               <img 
                 src="/images/logo-dark.jpg" 
                 alt="Kastelly Logo" 
-                className="object-contain h-28 md:h-36"
+                className="object-contain h-28 md:h-36 rounded-xl"
               />
             </div>
           </div>
