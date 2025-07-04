@@ -49,7 +49,7 @@ export const Gallery = () => {
   ];
 
   return (
-    <section className="py-20 bg-stone-50">
+    <section id="section-gallery" className="py-20 bg-stone-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-stone-800 mb-6">
@@ -93,6 +93,7 @@ export const Gallery = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
+              onClick={() => window.open('https://www.instagram.com/kastellydecoracoes', '_blank')}
               variant="outline" 
               size="lg"
               className="border-stone-800 text-stone-800 hover:bg-stone-800 hover:text-white transition-all duration-300 group"

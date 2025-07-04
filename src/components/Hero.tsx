@@ -11,16 +11,10 @@ export const Hero = () => {
         <div className="animate-fade-in">
           <div className="mb-8 flex flex-col items-center">
             <img 
-              src="/lovable-uploads/fcb630cc-8823-45f7-ab9b-537b672eb661.png" 
+              src="/images/logo-camada-dark.png" 
               alt="Kastelly Logo" 
-              className="w-24 h-24 md:w-32 md:h-32 mb-6 object-contain"
+              className="object-contain"
             />
-            <h1 className="text-6xl md:text-8xl font-bold text-stone-800 mb-4 tracking-tight">
-              KASTELLY
-            </h1>
-            <p className="text-xl md:text-2xl text-stone-600 font-light tracking-wider">
-              DESIGN
-            </p>
           </div>
           
           <h2 className="text-2xl md:text-4xl font-light text-stone-700 mb-6 leading-relaxed max-w-4xl mx-auto">
@@ -35,13 +29,17 @@ export const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
+              onClick={() => window.open('https://wa.me/5571992522386', '_blank')}
               size="lg" 
-              className="bg-stone-800 hover:bg-stone-700 text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300 hover:scale-105 group"
-            >
-              Iniciar Seu Projeto
+              className="bg-stone-800 hover:bg-stone-700 text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300 hover:scale-105 group">
+              <img src="/images/whats.png" /> Iniciar Seu Projeto
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
+              onClick={() => {
+                const section = document.getElementById('section-gallery');
+                section?.scrollIntoView({ behavior: 'smooth' });
+              }}
               variant="outline"
               size="lg" 
               className="border-stone-800 text-stone-800 hover:bg-stone-800 hover:text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300"
