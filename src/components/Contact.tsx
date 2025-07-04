@@ -19,8 +19,21 @@ export const Contact = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-16">
           <div className="lg:col-span-1 animate-fade-in">
             <h3 className="text-2xl font-light text-stone-800 mb-8">Entre em Contato</h3>
-
             <div className="space-y-6">
+            <Card className="border-stone-200 hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-4">
+                    <Instagram className="h-6 w-6 text-amber-600" />
+                    <div>
+                      <p className="font-medium text-stone-800">Instagram</p>
+                      <a href="https://instagram.com/kastellydecoracoes" target="_blank" rel="noopener noreferrer" className="text-stone-600 hover:text-amber-600 transition-colors">
+                        @kastellydecoracoes
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
               <Card className="border-stone-200 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
@@ -41,9 +54,12 @@ export const Contact = () => {
                     <Phone className="h-6 w-6 text-amber-600" />
                     <div>
                       <p className="font-medium text-stone-800">Telefone</p>
-                      <a href="tel:+557133560278" className="text-stone-600 hover:text-amber-600 transition-colors">
+                      <p><a href="https://wa.me/5571999964399" target="_blank" rel="noopener noreferrer" className="text-stone-600 hover:text-amber-600 transition-colors">
+                        (71) 99996-4399
+                      </a> (Whatsapp)</p>
+                      <p><a href="tel:+557133560278" className="text-stone-600 hover:text-amber-600 transition-colors">
                         (71) 3356-0278
-                      </a>
+                      </a></p>
                     </div>
                   </div>
                 </CardContent>
@@ -77,20 +93,6 @@ export const Contact = () => {
                         Sábados: 9h às 13h<br />
                         Domingos e feriados: Fechado<br />
                       </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-stone-200 hover:shadow-lg transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <Instagram className="h-6 w-6 text-amber-600" />
-                    <div>
-                      <p className="font-medium text-stone-800">Instagram</p>
-                      <a href="https://instagram.com/kastellydecoracoes" target="_blank" rel="noopener noreferrer" className="text-stone-600 hover:text-amber-600 transition-colors">
-                        @kastellydecoracoes
-                      </a>
                     </div>
                   </div>
                 </CardContent>

@@ -98,14 +98,7 @@ export const Gallery = () => {
               className="border-stone-800 text-stone-800 hover:bg-stone-800 hover:text-white transition-all duration-300 group"
             >
               <Instagram className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Siga @KastellyDesign
-            </Button>
-            <Button 
-              size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white transition-all duration-300 group"
-            >
-              Ver Portfólio Completo
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              Siga @kastellydecorações
             </Button>
           </div>
         </div>
