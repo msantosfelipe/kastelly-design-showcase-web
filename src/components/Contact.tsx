@@ -57,8 +57,8 @@ export const Contact = () => {
                     <Mail className="h-6 w-6 text-amber-600" />
                     <div>
                       <p className="font-medium text-stone-800">Email</p>
-                      <a href="mailto:contato@kastellydesign.com" className="text-stone-600 hover:text-amber-600 transition-colors">
-                        contato@kastellydesign.com
+                      <a href="mailto:kastellydecoracoes@hotmail.com" className="text-stone-600 hover:text-amber-600 transition-colors">
+                      kastellydecoracoes@hotmail.com
                       </a>
                     </div>
                   </div>
@@ -71,8 +71,8 @@ export const Contact = () => {
                     <Phone className="h-6 w-6 text-amber-600" />
                     <div>
                       <p className="font-medium text-stone-800">Telefone</p>
-                      <a href="tel:+5511987654321" className="text-stone-600 hover:text-amber-600 transition-colors">
-                        (11) 98765-4321
+                      <a href="tel:+557133560278" className="text-stone-600 hover:text-amber-600 transition-colors">
+                        (71) 3356-0278
                       </a>
                     </div>
                   </div>
@@ -84,8 +84,13 @@ export const Contact = () => {
                   <div className="flex items-center space-x-4">
                     <MapPin className="h-6 w-6 text-amber-600" />
                     <div>
-                      <p className="font-medium text-stone-800">Showroom</p>
-                      <p className="text-stone-600">Rua do Design, 123<br />São Paulo, SP 01234-567</p>
+                      <p className="font-medium text-stone-800">Endereço</p>
+                      <p className="text-stone-600">
+                        Alameda das Cajazeiras, 517<br />
+                        Caminho das Árvores<br />
+                        CEP 41820-470<br />
+                        Salvador, BA
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -97,7 +102,11 @@ export const Contact = () => {
                     <Clock className="h-6 w-6 text-amber-600" />
                     <div>
                       <p className="font-medium text-stone-800">Horários</p>
-                      <p className="text-stone-600">Seg-Sex: 9h às 18h<br />Sáb: 10h às 16h</p>
+                      <p className="text-stone-600">
+                        Seg-Sex: 9h às 18h<br />
+                        Sábados: 9h às 13h<br />
+                        Domingos e feriados: Fechado<br />
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -109,8 +118,8 @@ export const Contact = () => {
                     <Instagram className="h-6 w-6 text-amber-600" />
                     <div>
                       <p className="font-medium text-stone-800">Instagram</p>
-                      <a href="https://instagram.com/kastellydesign" className="text-stone-600 hover:text-amber-600 transition-colors">
-                        @KastellyDesign
+                      <a href="https://instagram.com/kastellydecoracoes" target="_blank" rel="noopener noreferrer" className="text-stone-600 hover:text-amber-600 transition-colors">
+                        @kastellydecoracoes
                       </a>
                     </div>
                   </div>
