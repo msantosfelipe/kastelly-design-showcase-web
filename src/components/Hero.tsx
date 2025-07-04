@@ -32,7 +32,7 @@ export const Hero = () => {
               onClick={() => window.open('https://wa.me/5571992522386', '_blank')}
               size="lg" 
               className="bg-stone-800 hover:bg-stone-700 text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300 hover:scale-105 group">
-              <img src="/images/whats.png" /> Iniciar Seu Projeto
+               Inicie seu projeto <img src="/images/whats.png" className="h-6 w-6 mr-2" />
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
@@ -45,6 +45,12 @@ export const Hero = () => {
               className="border-stone-800 text-stone-800 hover:bg-stone-800 hover:text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300"
             >
               Ver Portfólio
+            </Button>
+            <Button 
+              onClick={() => window.open('https://www.instagram.com/kastellydecoracoes', '_blank')}
+              size="lg" 
+              className="bg-stone-800 hover:bg-stone-700 text-white px-8 py-6 text-lg rounded-none font-light transition-all duration-300 hover:scale-105 group">
+               Visite nosso Instagram <img src="/images/instagram.png" className="h-6 w-6 mr-2" />
             </Button>
           </div>
         </div>
