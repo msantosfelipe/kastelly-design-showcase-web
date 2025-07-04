@@ -1,37 +1,7 @@
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, Instagram, MapPin, Clock } from "lucide-react";
-import { useState } from "react";
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    projectType: '',
-    budget: '',
-    message: ''
-  });
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Formulário enviado:', formData);
-    // Por enquanto, apenas registra os dados do formulário
-    // TODO: Integrar com Supabase para envio de formulários
-    alert('Obrigado pelo seu interesse! Entraremos em contato em até 24 horas.');
-  };
-
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -41,15 +11,15 @@ export const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-amber-600 mx-auto mb-8"></div>
           <p className="text-lg text-stone-600 max-w-3xl mx-auto font-light leading-relaxed">
-            Pronto para transformar seu espaço com móveis projetados sob medida? 
-            Compartilhe sua visão conosco e vamos dar vida ao projeto dos seus sonhos.
+          Pronto para transformar seu espaço com móveis planejados sob medida?<br />
+          Conte com a Kastelly para dar vida ao projeto dos seus sonhos
           </p>
         </div>
-        
+
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-16">
           <div className="lg:col-span-1 animate-fade-in">
             <h3 className="text-2xl font-light text-stone-800 mb-8">Entre em Contato</h3>
-            
+
             <div className="space-y-6">
               <Card className="border-stone-200 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
@@ -58,13 +28,13 @@ export const Contact = () => {
                     <div>
                       <p className="font-medium text-stone-800">Email</p>
                       <a href="mailto:kastellydecoracoes@hotmail.com" className="text-stone-600 hover:text-amber-600 transition-colors">
-                      kastellydecoracoes@hotmail.com
+                        kastellydecoracoes@hotmail.com
                       </a>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-stone-200 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
@@ -78,7 +48,7 @@ export const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-stone-200 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
@@ -111,7 +81,7 @@ export const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-stone-200 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4">
@@ -127,110 +97,28 @@ export const Contact = () => {
               </Card>
             </div>
           </div>
-          
+
           <div className="lg:col-span-2 animate-fade-in">
-            <h3 className="text-2xl font-light text-stone-800 mb-8">Inicie Seu Projeto</h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-stone-700 mb-2">Nome Completo *</label>
-                  <Input 
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder="Seu nome completo" 
-                    className="border-stone-300 focus:border-amber-600 focus:ring-amber-600"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-stone-700 mb-2">Email *</label>
-                  <Input 
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="seu.email@exemplo.com" 
-                    className="border-stone-300 focus:border-amber-600 focus:ring-amber-600"
-                    required
-                  />
-                </div>
+            <h3 className="text-2xl font-light text-stone-800 mb-8">Visite nossa loja</h3>
+
+            <p className="text-stone-600 font-light mb-6">
+              Venha até a loja e converse com nossos projetistas sobre o seu projeto personalizado. Será um prazer te receber!
+            </p>
+
+            <div className="animate-fade-in">
+              <div className="aspect-video bg-stone-200 rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4807.635819292549!2d-38.46040834866429!3d-12.980884926553022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b19f5183023%3A0xc24a323bd4a00d53!2sKastelly%20Design!5e0!3m2!1spt-BR!2sbr!4v1751591188119!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Localização da Kastelly Design"
+                ></iframe>
               </div>
-
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-stone-700 mb-2">Telefone</label>
-                  <Input 
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    placeholder="(11) 99999-9999" 
-                    className="border-stone-300 focus:border-amber-600 focus:ring-amber-600"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-stone-700 mb-2">Tipo de Projeto</label>
-                  <select 
-                    name="projectType"
-                    value={formData.projectType}
-                    onChange={handleInputChange}
-                    className="flex h-10 w-full rounded-md border border-stone-300 bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2"
-                  >
-                    <option value="">Selecione o tipo de projeto</option>
-                    <option value="cozinha">Cozinha</option>
-                    <option value="sala-estar">Sala de Estar</option>
-                    <option value="quarto">Quarto</option>
-                    <option value="escritorio">Home Office</option>
-                    <option value="jantar">Sala de Jantar</option>
-                    <option value="armazenamento">Armazenamento Personalizado</option>
-                    <option value="outro">Outro</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-stone-700 mb-2">Faixa de Orçamento</label>
-                <select 
-                  name="budget"
-                  value={formData.budget}
-                  onChange={handleInputChange}
-                  className="flex h-10 w-full rounded-md border border-stone-300 bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2"
-                >
-                  <option value="">Selecione a faixa de orçamento</option>
-                  <option value="25k-50k">R$ 25.000 - R$ 50.000</option>
-                  <option value="50k-100k">R$ 50.000 - R$ 100.000</option>
-                  <option value="100k-250k">R$ 100.000 - R$ 250.000</option>
-                  <option value="250k+">R$ 250.000+</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-stone-700 mb-2">Descrição do Projeto *</label>
-                <Textarea 
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Conte-nos sobre sua visão, dimensões do espaço, preferências de estilo, cronograma e requisitos específicos..." 
-                  rows={5}
-                  className="border-stone-300 focus:border-amber-600 focus:ring-amber-600 resize-none" 
-                  required
-                />
-              </div>
-
-              <Button 
-                type="submit" 
-                size="lg" 
-                className="w-full bg-stone-800 hover:bg-stone-700 text-white py-6 text-lg font-light transition-all duration-300 hover:scale-105"
-              >
-                Enviar Consulta do Projeto
-              </Button>
-
-              <p className="text-sm text-stone-500 text-center">
-                Normalmente respondemos em até 24 horas e oferecemos consultas iniciais gratuitas.
-              </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>
