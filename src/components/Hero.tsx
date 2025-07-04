@@ -47,11 +47,11 @@ export const Hero = () => {
         <div id="section-hero" className="animate-fade-in">
           {/* Enhanced Logo */}
           <div className="mb-8 md:mb-12 flex flex-col items-center">
-            <div className="backdrop-blur-sm rounded-1xl shadow-2xl transform transition-all duration-500 hover:scale-105 overflow-hidden">
+            <div className="p-6 rounded-2xl transform transition-all duration-500 hover:scale-105 overflow-hidden">
               <img 
                 src="/images/logo-dark.jpg" 
                 alt="Kastelly Logo" 
-                className="object-contain h-28 md:h-36 rounded-xl"
+                className="object-contain h-36 md:h-44 rounded-lg"
               />
             </div>
           </div>
@@ -65,10 +65,7 @@ export const Hero = () => {
             
             <div className="max-w-2xl mx-auto">
               <p className="text-lg text-white/90 leading-relaxed mb-4">
-                Transforme seus espaços com móveis personalizados artesanais
-              </p>
-              <p className="text-white/80 italic">
-                Onde materiais premium encontram design excepcional
+                Transforme seus espaços com móveis planejados
               </p>
             </div>
           </div>

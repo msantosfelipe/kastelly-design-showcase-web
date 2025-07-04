@@ -1,8 +1,11 @@
 
-import { Instagram, ArrowRight } from "lucide-react";
+import { Instagram, ArrowRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 export const Gallery = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
   const projects = [
     {
       id: 1,
@@ -58,32 +61,64 @@ export const Gallery = () => {
           <div className="w-24 h-1 bg-amber-600 mx-auto mb-8"></div>
           <p className="text-lg text-stone-600 max-w-3xl mx-auto font-light leading-relaxed">
             Explore nosso portfólio de criações em móveis personalizados, cada peça cuidadosamente 
-            projetada e meticulosamente confeccionada para superar as expectativas dos nossos clientes.
+            projetada e meticulosamente confeccionada para superar as expectativas dos nossos clientes
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project) => (
-            <div key={project.id} className="group cursor-pointer animate-fade-in">
-              <div className="relative overflow-hidden bg-white rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
+            <Dialog key={project.id}>
+              <DialogTrigger asChild>
+                <div className="group cursor-pointer animate-fade-in">
+                  <div className="relative overflow-hidden bg-white rounded-sm shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div className="relative">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span className="bg-amber-600 text-white px-3 py-1 text-xs font-medium rounded-full">
+                          {project.category}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-light text-stone-800 mb-2">{project.title}</h3>
+                      <p className="text-stone-600 font-light text-sm leading-relaxed">{project.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-4xl p-0 bg-transparent border-0 max-h-[90vh]">
                 <div className="relative">
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className="absolute -right-12 -top-12 text-white hover:bg-white/20 hover:text-white rounded-full"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
+                    }}
+                  >
+                    <X className="h-6 w-6" />
+                    <span className="sr-only">Fechar</span>
+                  </Button>
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full max-h-[80vh] object-contain rounded-lg"
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-amber-600 text-white px-3 py-1 text-xs font-medium rounded-full">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 pt-12">
+                    <h3 className="text-2xl font-light text-white mb-2">{project.title}</h3>
+                    <p className="text-white/90 font-light">{project.description}</p>
+                    <span className="inline-block mt-3 bg-amber-600 text-white px-3 py-1 text-sm font-medium rounded-full">
                       {project.category}
                     </span>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-light text-stone-800 mb-2">{project.title}</h3>
-                  <p className="text-stone-600 font-light text-sm leading-relaxed">{project.description}</p>
-                </div>
-              </div>
-            </div>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
         
