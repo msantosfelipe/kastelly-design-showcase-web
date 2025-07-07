@@ -10,42 +10,42 @@ export const Gallery = () => {
     {
       id: 1,
       image: "images/gallery/cozinha/1.jpg",
-      title: "Cozinha planejada com design moderno",
+      title: "Cozinha Planejada com Design Moderno",
       description: "Ambientes otimizados para unir funcionalidade e estilo. Ideal para quem ama cozinhar com praticidade",
       category: "Cozinha"
     },
     {
       id: 2,
       image: "images/gallery/cozinha/2.jpg",
-      title: "Elegância e organização",
+      title: "Elegância e Organização",
       description: "Armários sob medida, acabamento premium e espaços inteligentes que valorizam cada centímetro",
       category: "Cozinha"
     },
     {
       id: 3,
       image: "images/gallery/closet/1.jpg",
-      title: "Tudo no seu lugar",
+      title: "Tudo no Seu Lugar",
       description: "Gavetas, nichos e cabideiros sob medida para facilitar sua rotina e manter tudo visível e acessível",
       category: "Closet"
     },
     {
       id: 4,
       image: "images/gallery/quarto/1.jpg",
-      title: "Conforto que abraça",
+      title: "Conforto que Abraça",
       description: "Um ambiente acolhedor e planejado para garantir noites tranquilas e bem-estar",
       category: "Quarto"
     },
     {
       id: 5,
       image: "images/gallery/banheiro/1.jpg",
-      title: "Banheiro com design inteligente",
+      title: "Banheiro com Design Inteligente",
       description: "Um banheiro pensado para oferecer conforto e beleza, do primeiro ao último momento do seu dia",
       category: "Banheiro"
     },
     {
       id: 6,
       image: "images/gallery/sala/1.jpg",
-      title: "Sala aconchegante e sofisticada",
+      title: "Sala Aconchegante e Sofisticada",
       description: "Um espaço pensado para receber bem, com móveis que trazem conforto e elegância ao ambiente",
       category: "Sala"
     },

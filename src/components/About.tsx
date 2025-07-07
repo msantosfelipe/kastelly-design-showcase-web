@@ -3,12 +3,14 @@ import { CheckCircle } from "lucide-react";
 
 export const About = () => {
   const services = [
-    "Cozinhas Personalizadas",
-    "Guarda-roupas Sob Medida",
-    "Móveis para Sala de Estar",
-    "Soluções para Home Office",
-    "Conjuntos para Sala de Jantar",
-    "Coleções para Quarto"
+    "Cozinhas Planejadas",
+    "Guarda-Roupas Sob Medida",
+    "Painéis, Estantes e Móveis para Sala",
+    "Ambientes para Home Office",
+    "Dormitórios Sob Medida",
+    "Banheiros Planejados",
+    "Closets Personalizados",
+    "Mobiliário Comercial"
   ];
 
   return (
@@ -25,11 +27,11 @@ export const About = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
               <p className="text-lg text-stone-600 leading-relaxed mb-8 font-light">
-                Na Kastelly Design, acreditamos que cada peça de móvel personalizado é uma extensão da sua personalidade e estilo de vida. Com anos de experiência, nos dedicamos a criar ambientes únicos e funcionais, utilizando materiais de alta qualidade e design inspirador.
+              Com mais de 15 anos de experiência no mercado, nossa loja é especializada em móveis planejados que unem qualidade, funcionalidade e bom gosto. Ao longo desses anos, ajudamos diversos clientes a transformarem seus lares com ambientes personalizados, feitos sob medida para atender às suas necessidades e estilo de vida.
               </p>
               
               <p className="text-lg text-stone-600 leading-relaxed mb-8 font-light">
-                Nossa paixão pelo artesanato e atenção aos detalhes garantem que cada projeto reflita sua visão, mantendo os mais altos padrões de qualidade e funcionalidade.
+              Nosso compromisso é entregar soluções completas, desde o projeto até a instalação, com atenção aos detalhes, ótimos materiais e atendimento humanizado. Seja para cozinha, quarto, sala, banheiro, closet ou qualquer outro espaço, criamos móveis que valorizam cada ambiente e tornam sua casa ainda mais especial.
               </p>
             </div>
             
