@@ -9,46 +9,46 @@ export const Gallery = () => {
   const projects = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=800&h=600&fit=crop",
-      title: "Conjunto Contemporâneo para Sala",
-      description: "Sofá modular personalizado com estofamento em couro italiano e estruturas em nogueira maciça",
-      category: "Sala de Estar"
+      image: "images/gallery/cozinha/1.jpg",
+      title: "Cozinha planejada com design moderno",
+      description: "Ambientes otimizados para unir funcionalidade e estilo. Ideal para quem ama cozinhar com praticidade",
+      category: "Cozinha"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop",
-      title: "Cozinha Executiva",
-      description: "Marcenaria artesanal em carvalho premium com soluções inteligentes de armazenamento integrado",
+      image: "images/gallery/cozinha/2.jpg",
+      title: "Elegância e organização",
+      description: "Armários sob medida, acabamento premium e espaços inteligentes que valorizam cada centímetro",
       category: "Cozinha"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop",
-      title: "Coleção Quarto Master",
-      description: "Conjunto personalizado para quarto com cabeceira sob medida e criados-mudo em mogno nobre",
-      category: "Quarto"
+      image: "images/gallery/closet/1.jpg",
+      title: "Tudo no seu lugar",
+      description: "Gavetas, nichos e cabideiros sob medida para facilitar sua rotina e manter tudo visível e acessível",
+      category: "Closet"
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop",
-      title: "Santuário Home Office",
-      description: "Espaço de trabalho ergonômico com estantes integradas e mesa personalizada em bambu sustentável",
-      category: "Escritório"
+      image: "images/gallery/quarto/1.jpg",
+      title: "Conforto que abraça",
+      description: "Um ambiente acolhedor e planejado para garantir noites tranquilas e bem-estar",
+      category: "Quarto"
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&h=600&fit=crop",
-      title: "Elegância na Sala de Jantar",
-      description: "Mesa artesanal com design de borda viva e cadeiras combinando em madeira de demolição",
-      category: "Jantar"
+      image: "images/gallery/banheiro/1.jpg",
+      title: "Banheiro com design inteligente",
+      description: "Um banheiro pensado para oferecer conforto e beleza, do primeiro ao último momento do seu dia",
+      category: "Banheiro"
     },
     {
       id: 6,
-      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=800&h=600&fit=crop",
-      title: "Sistema de Guarda-roupa Personalizado",
-      description: "Guarda-roupa do chão ao teto com compartimentos personalizados e mecanismos de fechamento suave",
-      category: "Armazenamento"
-    }
+      image: "images/gallery/sala/1.jpg",
+      title: "Sala aconchegante e sofisticada",
+      description: "Um espaço pensado para receber bem, com móveis que trazem conforto e elegância ao ambiente",
+      category: "Sala"
+    },
   ];
 
   return (
